@@ -24,6 +24,8 @@ header{
           display: flex;
           justify-content: space-between;
           align-items: center;
+          max-width: 1440px;
+       
          
       }
 .header__logo{
@@ -37,21 +39,24 @@ header{
      
     height: 100%;
   display: flex;
-  width: 58%;
-  justify-content: space-around;
+  width: 55.3%;
+  justify-content: space-between;
   align-items: center;
+  
 }
 .header__menu nav{
    
     display: flex; 
     justify-content: space-between;
     color: rgba(0,0,0,0.5);
+    margin-right: -30px;
     
   }
   .header__menu nav li{
     display: inline;
     padding-right: 24px;
   }
+  
   ul {
     list-style: none; 
     
@@ -61,7 +66,12 @@ header{
       color: black;
       
   }
+  body{
+      max-width: 1440px;
+     
+  }
 .header__menu button{
+   
     width: 116px;
 height: 36px;
 border: 2px solid #000000;
@@ -69,7 +79,7 @@ border: 2px solid #000000;
 border-radius: 3px;
 background-color: white;
 
-margin-right: 72px;
+
 transition: all 0.5s ease-in-out  ;
 }
 .header__menu a:hover {
@@ -102,7 +112,7 @@ transition: all 0.5s ease-in-out  ;
     flex-direction: column;
     
     height:  583px;
-    width: 30.5%;
+    width: 33.5%;
  
     padding: 73px 0 0 72px;
 }
@@ -127,6 +137,7 @@ font-size: 24px;
 line-height: 29px;
 
 }
+
 .main-page__info p{
    
     
@@ -170,13 +181,14 @@ transition: all 0.5s ease-in-out;
 }
 .main-page__photo img{
     height: 100%;
-    width: 99%;
+    width: 100%;
    background-color: #fff;
   //  background: url(../img/first-dance-i.png) 100% 100% no-repeat; 
   
    
     
 }
+
 .main__info{
     padding: 100px 0 0 72px;
 }
@@ -381,6 +393,7 @@ footer {
 }
 
 @media screen and (max-width: 375px) { /* разрешение планшета */
+    
     .header__menu a:hover {
         border-bottom: 1px solid black; 
         color:black;
