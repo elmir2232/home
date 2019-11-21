@@ -241,11 +241,11 @@ line-height: 153.4%;
 margin: 24px 0 0 41px;
 }
 .second-page section:nth-of-type(1) h2{
-   margin: 40px 0 0 24px !important;
+   margin: 40px 0 0 24px ;
 
 }
 .second-page section:nth-of-type(1) p:nth-of-type(1){
-   margin: 24px 0 0 24px !important;
+   margin: 24px 0 0 24px ;
 }
 .second-page section:nth-of-type(1) p+p{
    margin: 8px 0 0 24px
@@ -436,10 +436,7 @@ margin: 18px 0 37px -153px;
        width: 100%;
    }
    .header__logo{
-      margin:25px 0 16px -166px;
-      font-family: Montserrat;
-      font-style: normal;
-      font-weight: bold;
+      
       font-size: 18px;
       width: 178px;
       
@@ -452,9 +449,7 @@ margin: 18px 0 37px -153px;
    }
    .main-page__info h1{
        
-font-family: Montserrat;
-font-style: normal;
-font-weight: bold;
+
 font-size: 36px;
 line-height: 93.9%;
    }
@@ -493,9 +488,7 @@ line-height: 17px;
 }
 .main-page__info div:nth-last-of-type(2) p{
    
-font-family: Montserrat;
-font-style: normal;
-font-weight: normal;
+
 font-size: 14px;
 line-height: 153.4%;
 width: 300px;
@@ -513,16 +506,12 @@ width: 300px;
     height: 100%;
 }
 .main__info h2 {
-    font-family: Montserrat;
-font-style: normal;
-font-weight: bold;
+    
 font-size: 24px;
 line-height: 93.9%;
 }
 .main__info p {
-    font-family: Montserrat;
-font-style: normal;
-font-weight: normal;
+    
 font-size: 13px;
 line-height: 153.4%;
 width: 309px;
