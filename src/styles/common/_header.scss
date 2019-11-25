@@ -1,0 +1,139 @@
+.header{
+    height: 72px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1396px;
+
+    
+&__logo{
+        font-weight: bold;
+        font-size: 18px;
+        margin: 28px 72px ;
+        }
+&__menu{     
+        height: 100%;
+        display: flex;
+        width: 55.3%;
+        justify-content: space-between;
+        align-items: center;
+        
+        }
+&__menu nav{ 
+        display: flex; 
+        justify-content: space-between;
+        color: rgba(0,0,0,0.5);
+        margin-right: -30px;
+        
+        }
+&__menu nav li{
+        display: inline;
+        padding-right: 24px;
+        } 
+&__menu nav a{
+            text-decoration: none;
+            color: black;
+            
+        }
+        
+&__menu button{
+         
+          width: 116px;
+      height: 36px;
+      border: 2px solid #000000;
+      
+      border-radius: 3px;
+      background-color: white;
+      
+      
+      transition: all 0.5s ease-in-out  ;
+      }
+&__menu a:hover {
+          border-bottom: 1px solid black; 
+          color:black;
+          
+         
+       
+       }
+&__menu button:hover{
+          border: 2px solid #FF699F;
+          box-sizing: border-box;
+          border-radius: 3px;
+          color:#FF699F;
+          
+       }
+}
+@media screen and (max-width: 375px) {
+    .header{
+        height:  auto;
+        display: flex;
+        flex-direction: column;
+    &__menu a:hover {
+        border-bottom: 1px solid black; 
+        color:black;
+     }
+    
+   &__menu ul{
+       display: none
+   }
+   &__menu li{
+       width: 100%;
+       display: block;
+       font-size: 12px;
+   }
+   &__menu a{
+       display: block;
+       padding: 8px;
+   }
+   .toggle-button{
+       position:  absolute;
+       top: 20px;
+      right: 56px;
+       text-align: center;
+     
+       display: block;
+       cursor: pointer;
+       color: black;
+    
+   }
+   .toggle-button:before{
+content: attr(data-open);
+display: block;
+font-size: 25px;
+
+margin-right: -65px;
+
+   }
+   #menu-checkbox:checked + nav[role="navigation"] .main-menu{
+display: flex;
+flex-direction: column;
+margin: 18px 0px 37px -76px;
+   }
+   &__menu nav li{
+       margin-top: 5px
+   }
+   &__menu nav li + button{
+       margin-top: 34px
+   }
+   &__menu ul{
+       border: 1px solid black;
+       padding-bottom: 5px ;
+   }
+
+   &__menu button{
+     margin-left: 7px;
+   }
+   #menu-checkbox:checked + nav[role="navigation"] .toggle-button:before{
+       content: attr(data-close);
+   }
+
+   
+&__logo{
+    margin: 25px 166px 16px 0;
+    font-size: 18px;
+    width: 178px;
+    
+    line-height: 93.9%;
+ }
+    }
+}
