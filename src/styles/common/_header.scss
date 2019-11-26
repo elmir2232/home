@@ -90,7 +90,7 @@
        top: 20px;
       right: 56px;
        text-align: center;
-     
+       
        display: block;
        cursor: pointer;
        color: black;
@@ -107,7 +107,8 @@ margin-right: -65px;
    #menu-checkbox:checked + nav[role="navigation"] .main-menu{
 display: flex;
 flex-direction: column;
-margin: 18px 0px 37px -76px;
+margin: 18px 0px 37px -66px;
+transition: all 0.5s ease-in-out;
    }
    &__menu nav li{
        margin-top: 5px
